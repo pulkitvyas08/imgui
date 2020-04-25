@@ -1,0 +1,160 @@
+[33m78ecd757[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m added premake file
+[33m110f506e[m Comments in imgui.h
+[33mfbc93deb[m Internal: Refactor: Moved NewFrameSanityChecks as ErrorCheckNewFrameSanityChecks()
+[33mccf0cc85[m Added ImGuiKeyModFlags. Added additional checks in EndFrame() to verify that io.KeyXXX values have not been tampered with between NewFrame() and EndFrame().
+[33md8824f9a[m CI: Clarify purpose of example_null, Changelog
+[33mac5ffffc[m CI: Test builds with freetype on linux.
+[33mbdd31ec4[m Internal: Refactor: Moved RenderColorRectWithAlphaCheckerboard() to imgui_draw.cpp, tweaked signature.
+[33m0bbbbe0f[m Internal: Refactor: Moved RenderArrow, RenderBullet, RenderCheckMark to imgui_draw.cpp, changed RenderCheckMark to avoid using ImGui context
+[33m2fd411a8[m Support custom stb_rect_pack filename in Freetype (#3062)
+[33m75a65f6f[m CI: Test build with large indices, obsolete functions disabled and demo/metrics windows disabled.
+[33m339ffd25[m Internals: Renamed ImBoolVector to ImBitVector, added low-level loose function to replicate the behavior include a help SetBitRange() function.
+[33m1d5612a0[m Internal: Added two missing ImVec2 operators for consistency. Split up DragDropWithinSourceOrTarget
+[33mb016f1ad[m Examples: SDL+DX11: Fixed resizing main window. Amend (#3057)
+[33ma0f01d22[m Improve resizing in dx11 example (#3057)
+[33ma5041c88[m Focus: Child inherit focus scope from parent (amend 2ebe08be).
+[33m9a46a19e[m Internals: Rename ImGuiSelectableFlags_PressedOnXXX to ImGuiSelectableFlags_SelectOnXXX, ImGuiButtonFlags_NoHoveredOnNav to ImGuiButtonFlags_NoHoveredOnFocus.
+[33m4a10af2b[m Unicode, Windows: Remove stringapiset.h include (breaks vs2010 and seems unnecessary?). (#2541, #2815)
+[33me137db2d[m CI: Enable error on warnings for the extra warnings builds as an experiment. FAQ tweaks
+[33maef057e9[m Internals: Added GetInputTextState() + comments.
+[33m2dcf8df9[m Internals: Shuffled some of the windows-specific includes to avoid duplication. Might have undesirable side-effects on some compilers, please report!
+[33mde37a0bf[m Internals: fix potential warning. Comments around include sections. Moved a few bits.
+[33m1b5b87a4[m Internals: Added #define NOMINMAX before windows.h include for single-compile-unit builds.
+[33m0850b46c[m ImDrawList: Internals: Added IM_DRAWLIST_ARCFAST_TESSELLATION_MULTIPLIER setting.
+[33mb029182a[m Merge branch 'features/unicode'
+[33m897704cb[m Menus: Tweak for first-level menu windows to be positioned regardless of MenuBarHeight() which is not stored in window, allowing undocumented modification of the menu bar height).
+[33ma4133245[m[33m ([m[1;31morigin/features/unicode[m[33m)[m Unicode: Changelog, comments, minimum CI integration. (#2541, #2538, #2815)
+[33m0283a6e5[m ImFont:  Demo, Store Used4kPagesMap[] map in ImFont to facilitate iteration on all codepoints with a large value of IM_UNICODE_CODEPOINT_MAX. (#2815)
+[33mc8ea0a01[m Unicode: UTF32 support improvements (#2541, #2538, #2815)
+[33m6d59653e[m Unicode: full Unicode Support (6 squashed commits) (#2541, #2538)
+[33m8c683de3[m Internals: Refactor: Moved get height and contents regions functions, to Layout section. IF YOU GREAT CONFLICTS WHILE MERGING (NOT REBASING) THOSE 6 PREV COMMITS, TRY MERGING THEM INDIVIDUALLY 1 by 1 or 2 by 2 etc.
+[33m602df11f[m Internals: Refactor: Moved item width/size functions to Layout section.
+[33m6c1810e5[m Internals: Refactor: Moved cursor position functions to Layout section.
+[33m3ce26f65[m Internals: Refactor: Moved ItemAdd(), ItemSize(), BeginGroup(), EndGroup(), SameLine(), Indent(), Unindent() to Layout section.
+[33mcaca55c6[m Internals: Refactor: Moved code into a Styling section and some code into the Error Handling section.
+[33m2679bee2[m Internals: Refactor: Moved code out of NewFrame() into UpdateTabFocus() and UpdateSettings()
+[33m095dc996[m Disable deprecated-enum-enum-conversion (#3040, #2983)
+[33m628614c6[m Demo: Remove unnecessary code added by 24bd33ac.
+[33m24bd33ac[m Menus: Some renaming, comments, add to demo. Amend 0342a3c. (#1207)
+[33m0342a3c5[m Menus: Implement BeginMenu() appending to existing menu when executed with same ID multiple times. (#1207)
+[33m898e91f2[m Internals: Added TempInputText() to facilitate creation of custom widgets, renamed TempInputTextScalar() to TempInputScalar() etc. (#2718)
+[33me547f898[m Demo: Added color gradient in demo to identify srgb/linear issues better. Tweaks.
+[33m03453246[m Backends: SDL: Fixed mapping for ImGuiKey_KeyPadEnter. (#3031) [@Davido71]
+[33m02a6c060[m Window: Fixed a bug with child window inheriting ItemFlags from their parent when the child window also manipulate the ItemFlags stack. (#3024) [@Stanbroek]
+[33mea3fc760[m BeginMenu: Fixed a bug where SetNextWindowXXX data before a BeginMenu() would not be cleared when the menu is not open. (#3030)
+[33m8836975d[m Drag and Drop, Nav: Disabling navigation arrow keys when drag and drop is active. (#3025)
+[33mb62f1ea8[m Fix zealous PVS studio warnings. Minor tweaks.
+[33m09329ea4[m Fix Clang 9.0 zealous warnings
+[33mceec3cd3[m Backends: Win32: Added ImGui_ImplWin32_EnableDpiAwareness(), ImGui_ImplWin32_GetDpiScaleForHwnd(),  ImGui_ImplWin32_GetDpiScaleForMonitor() helpers functions.
+[33m8601187f[m Backends: Win32: Clarify how the WndProc handler requires a forward declaration.
+[33mf339b24b[m Links, alphabetical order
+[33m2bc3a92f[m Update README.md
+[33mb4ac420f[m Demo: Amend d284a6c (#2149, #515)
+[33md284a6cf[m InputText: Fixed password fields displaying ASCII spaces as blanks. Fixed non-ASCII space occasionally creating unnecessary empty polygons. (#2149, #515)
+[33mccaec1a2[m Version 1.76 WIP
+[33m30bb1567[m Remove trailing spaces
+[33m70975fe4[m Demo: Added a black and white gradient to Demo>Examples>Custom Rendering.
+[33md8948b53[m ColorButton: Added ImGuiColorEditFlags_NoBorder flag to remove the border normally enforced by default.
+[33m21b9e429[m Minor fixes to example_sdl_metal and a changelog entry. Add example_sdl_metal to CI builds.
+[33mf346b4b3[m Examples: SDL+Metal example.
+[33md16c87a5[m Internals: Minor renaming
+[33m58b3e02b[m[33m ([m[1;33mtag: v1.75[m[33m)[m Version 1.75
+[33md37d2547[m Added IMGUI_DISABLE compile-time definition to make all headers and sources empty.
+[33mf694244d[m InputText: Fix using a combination of _CallbackResize + _EnterReturnsTrue + lack of persisting user storage. (#3009)
+[33mbdbb2b21[m Fix 83efdcec from overflowing buffer + make it a single undo records + comments (#3008)
+[33m83efdcec[m Canceling text input with [esc] key uses stb_textedit facilities to restore original value. This makes restoration undoable using hotkeys.
+[33m5a437f19[m Internals: GetItemStatusFlags(). Added Comments.
+[33mfc42528f[m When testing for the presence of the ImGuiWindowFlags_NoBringToFrontOnFocus flag we test both the focused/clicked window (which could be a child window) and the root window.
+[33mfc41839c[m Focus: Reworking FocusWindow() so in Docking branch we can fix CTRL+Tab being out of order on Docked windows because WindowsFocusOreder is poorly maintained.
+[33mfb257eef[m Internals: Update ->RootWindow and other links before applying the SetNextWindowXXX stuff. This is so FocusWindow() can always assume that ->RootWindow != NULL.
+[33md9bca0d8[m Nav: Fixed a bug where the initial CTRL-Tab press while in a child window sometimes selected the current root window instead of always selecting the previous root window. (#787)
+[33md19297e2[m InputTextMultiline: Provide label to BeginChildEx so internal window name hold a little more context.
+[33m47fab0e1[m Misc renaming, comments. Docs: add missing spacing to Changelog.
+[33m9cff4d6e[m Columns: ImDrawList::Channels* functions now work inside columns.
+[33m05a49f04[m Examples: Emscripten: Demonstrating embedding fonts in Makefile and code. (#2953) [@Oipo]
+[33m8cbb693f[m Emscripten: Allow filesystem support. (#3005)
+[33m6e1f8be0[m Window: Fix SetNextWindowBgAlpha(1.0f) failing to override alpha component. (#3007)
+[33m0a235827[m Examples: VS projects: Removed inconsistent/extraneous explicit linkage to imm32.
+[33m0e890419[m Internals: ButtonEx, ButtonBehavior can support multiple mouse buttons.
+[33m5f4dfad5[m Merge misc/shallow changes from Docking to reduce drift.
+[33m6c1a7377[m Tooltip: Testing DragDropWithinSourceOrTarget in BeginTooltipEx() instead of just BeginTooltip() - feel this was an overlook. Added tooltip flags instead of using bool.
+[33m4d4e3b97[m TODO, Readme
+[33mb8872599[m Bindings: Improved FreeGLUT support for MinGW (#3004)
+[33mf6da5000[m Backends: OpenGL2: Explicitly backup, setup and restore GL_TEXTURE_ENV to increase compatibility with legacy OpenGL applications. (#3000)
+[33m5363af7f[m AddCircle, AddCircleFilled: Add auto-calculation of circle segment counts (amends)
+[33m051ce076[m AddCircle, AddCircleFilled: Add auto-calculation of circle segment counts
+[33m2eda3585[m Fixed hoverable/focus bug introduced in 3fe6ae97 (#2997)
+[33m7a227674[m CI: Add MSVC extra warnings build and correct labels of other extra warnings builds.
+[33m3fe6ae97[m Internals: Move some Nav functions and members around (no functional change) + Misc comments
+[33m0a3df4b2[m Update FAQ.md
+[33m15c6abe4[m Internals: Standard math functions default redirection uses a define instead of an extraneous inline function call
+[33m8bcac7d9[m Backends: GLFW, SDL: report Windows key (io.KeySuper) as always released.
+[33me499497e[m Backends: Win32: Added support for io.KeySuper (Windows key) for consistency with other backends. (#2976)
+[33m2478dbfd[m Disable warning C5054 introduced in VS 2019 16.2 (#2983)
+[33m6c00d191[m Disable format checks when using stb_sprintf.h
+[33maa346816[m Backends: GLFW: inhibit error callback when creating cursors because X11 setups may be missing them + comment (#2980)
+[33m9ad4c5da[m Fix zealous warnings + Internals: Renamed members from XxxxID to XxxxxId to be more consistent with rest of the codebase (still some inconsistency left that are harder to fix)
+[33mf6d6880a[m Internals: Nav: PushFocusScope, PopFocusScope, GetFocusScopeID() helpers
+[33m2ebe08be[m Focus, Nav: Merged bits from RangeSelect features to enable early manipulation of focus scope for styling purpose.
+[33m4f7bf7e9[m Backends: Win32: Added support for #define IMGUI_IMPL_WIN32_DISABLE_GAMEPAD and IMGUI_IMPL_WIN32_DISABLE_LINKING_XINPUT. (#2716)
+[33me2eb0b4b[m Internals: Begin tries to setup WindowTemp/DC members in same order as their declaration. Readme: remove Coverity banner (PVS is better)
+[33m02c2d18a[m Internals: Renaming and marking of legacy focus/tabbing system
+[33m52334ad8[m Internals: Minor ordering/comments of ImGuiWindowTempData.
+[33mf56962cb[m ColorEdit: "Copy As" context-menu tool shows hex values with a '#' prefix instead of '0x' + both with/without alpha when available.
+[33mff5299e0[m Docs: FAQ, Comments.
+[33m4b3c5ff5[m Comments + minor moving
+[33mf03c00bc[m Added imgui_single_file.h, We use this to validate compiling all *.cpp in same compilation unit.
+[33m97a8dc65[m CI: Added PVS-Studio static analysis on the continuous-integration server.
+[33mae1e3619[m Disable some PVS studio warnings.
+[33m4ee7aa72[m ButtonBehavior: Default assignment of pressed behavior now also test for ImGuiButtonFlags_PressedOnDragDropHold which wasn't the case before.
+[33m1eb71fc7[m ButtonBehavior: Added ImGuiButtonFlags_PressedOnClickReleaseAnywhere behavior (#2971)
+[33m00c515f5[m Add glbinding build sample to Makefiles of GL3 examples. (#2870)
+[33mf9630e60[m Metrics: Fix not being able to expand "ParentWindow" when parent window is same as root window.
+[33m1db78b8c[m Renaming + missing initialization + missing Changelog update.
+[33m32c33c66[m ColorEdit: Preserve last saturation value when V=0. Disable Hue editing lock.
+[33m5e2329b9[m Backends: GL3: Implement glbinding opengl loader support. (#2870)
+[33me254167a[m ColorEdit: Fix label alignment when using ImGuiColorEditFlags_NoInputs. (#2955)
+[33md5819393[m Removed trailing spaces.
+[33m22d7f26e[m Tweak wording
+[33m0dd02dd9[m Happy new year!
+[33m2b10e065[m Fix a typo
+[33mdc66f83d[m Additional duplicated comments about usage of std::string and input text resize callback (#2006, #1443, #1008)
+[33m854fc081[m Amend f70204f2 to facilitate merges.
+[33m061650bd[m Update Readme
+[33mf70204f2[m Minor bits, placeholder aimed at facilitating merging of Tables branch into Docking
+[33me01fb546[m Internals: Separator: Simplify duplicated code.
+[33ma610f1da[m Bezier Tweaks, fixed parameter order of 3831d50
+[33m3831d50a[m Add ImBezierClosestPoint() function which returns a point on bezier curve which is closed to a specified point.
+[33m0f7105e1[m Backends: SDL: Wayland: Use SDL_GetMouseState (amend 78ff147) (#2800, 2802)
+[33m78ff1471[m SDL: On wayland use SDL_GetMouseState (#2802)
+[33m9d444062[m Limiting Columns()/BeginColumns() api to 64 columns (#125)
+[33m10fdc03a[m Clarification about Im helpers + moving GetColorXXX functions outside of that block.
+[33m3a800f2d[m DragFloat: Mention usage of FLT_MAX, INT_MAX etc. explicitly. (#2931)
+[33m43bd80a4[m Internals: Breaking: ImRect() default constructor initializes all fields with 0.0f
+[33m6fdde67b[m Documentation, FAQ, todo tweaks
+[33m0e741036[m ImDrawList: Add AddNgon(), AddNgonFilled() API.
+[33mf9c26d23[m Removed redirecting functions/enums that were marked obsolete in 1.53 (December 2017).
+[33me42c1e16[m Exposed IMGUI_DEBUG_PARANOID in imconfig.h + using a #define with no value to match other uses in imconfig.h
+[33m697f15e3[m Added PrimUnreserve() API. Obsoleted calling ImDrawList::PrimReserve() with a negative count.
+[33me4a59d00[m TabItem: honor ImGuiTabItemFlags_NoCloseButton passed as parameter (although undocumented and part of private api) (#2923)
+[33mf656e777[m Inputs: Added ImGuiMouseButton enum for convenience (e.g. ImGuiMouseButton_Right=1).
+[33m6cbed03d[m Comments, clarified mouse button ordering.
+[33m03b7170d[m Backends: GLFW: Added workaround for people who use development version of GLFW which is older than commit that added required cursor support. (#2922)
+[33m7ff13f4e[m Examples: Explicitly adding -DIMGUI_IMPL_OPENGL_LOADER_GL3W to Makefile to match linking settings
+[33mb521cd35[m Removed implicit default parameter to IsMouseDragging(int button = 0) to be consistent with other mouse functions.
+[33m6d9a54a9[m Examples: Metal: Wrap main event loop body in an @autoreleasepool block to ensure allocations get freed even if underlying system event loop gets paused due to app nap (#2910, #2917)
+[33m8342e5b9[m Amend previous commits (added ImGuiMouseCursor_NotAllowed enum + new cursors in GLFW 3.4)
+[33m945a5097[m Implement ImGuiMouseCursor_NotAllowed mouse cursor.
+[33mb5cad20d[m Implement new GLFW 3.4 resizing cursors.
+[33mabaf0256[m Version 1.75 WIP
+[33mbf6d1ba3[m CI: Add 32/64 bit build variations to builds with extra warnings.
+[33m1742ca45[m CI: Add unity builds test. (#2893)
+[33ma8092085[m Internal: Added unused parameter named to facilitate cimgui parsing of imgui_internal.h
+[33mf60518b4[m Update FAQ.md
+[33mbdce8336[m[33m ([m[1;33mtag: v1.74[m[33m)[m Version 1.74
+[33m26d177bc[m Docs: Moved misc/fonts/README.txt to docs/FONTS.txt. + tweaks
+[33m1615e9ea[m CI: Enable extended warnings in example_null builds. CI: Add MinGW build with extra warnings on windows.
+[33mbbe04099[m Metrics: Show wire-frame mesh and approximate surface area when hovering ImDrawCmd. Amend aeb5795. Internals: Added ImTriangleArea()
+[33maeb57952[m Added area calculation for draw lists in metrics Added ability to hover over a draw list's summary stats and see all the contents in wireframe
+[33m0cb1c633[m Demo: tweaked demo help section, reference to "Examples" and "Tools". Reference to Keyboard navigation. Removed some of the more "obvious/standard" controls.
+[33mb205ab01[m Internals: Added IM_ASSERT_PARANOID, IMGUI_DEBUG_PARANOID define. Shuffled a bit of the macros section in imgui_internal.h
